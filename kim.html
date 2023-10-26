@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("https://thumbs.dreamstime.com/b/saint-petersburg-russia-circa-may-goods-display-sony-store-galeria-shopping-center-electronics-store-134641471.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            text-align: center;
+            margin: 5;
+            padding: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        h1 {
+            color: #333;
+        }
+
+        form {
+            max-width: 400px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Customer Registration</h1>
+    <form action="process_registration.php" method="POST">
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required>
+
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name "last_name" required>
+
+        <label for="phone_NO">Phone Number:</label>
+        <input type="text" id="phone_NO" name="phone_NO" required>
+
+        <label for="TIN_NO">TIN Number:</label>
+        <input type="text" id="TIN_NO" name="TIN_NO" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="confirm_password">Confirm Password:</label>
+        <input type="password" id="confirm_password" name="confirm_password" required>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+        <label for="birthdate">Date of Birth:</label>
+        <input type="date" id="birthdate" name="birthdate" required>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="rwanda">Rwanda</option>
+            <option value="congo">Congo</option>
+            <option value="uganda">Uganda</option>
+            <option value="kenya">Kenya</option>
+            <option value="tanzania">Tanzania</option>
+            <option value="burundi">Burundi</option>
+            <option value="sudan">Sudan</option>
+        </select>
+
+        <label for="newsletter">Subscribe to Newsletter:</label>
+        <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+
+        <br><br>
+        <h3>
+        <p> Keeping customers involves building strong relationships and providing value. Here are some key strategies:
+
+            Excellent Customer Service: Provide exceptional customer service by being responsive, helpful, and friendly.
+            
+            Quality Products/Services: Offer high-quality products or services that meet or exceed customer expectations.</p>
+</h3>
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
